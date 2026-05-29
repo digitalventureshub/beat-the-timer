@@ -1,1 +1,550 @@
-<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-WaR5jQLCG0EocYlWb7h9VL&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script nonce="WaR5jQLCG0EocYlWb7h9VL">(function(){window._cf_chl_opt = {cFPWv: 'b',cH: 't3.id33kL2ftGDFAayJBpeqEym_yWcF4TdVSRqNxRZE-1779460724-1.2.1.1-xDKqxQxPt.FSmu73R0M6vvTa9gSbJWZS2w9k.lnTr7sYWh72WGn.GE2DjzgY52Sg',cITimeS: '1779460724',cN: 'WaR5jQLCG0EocYlWb7h9VL',cRay: '9ffc90f66d48ede4',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/api/artifacts/download?__cf_chl_tk=mTdTBwt9oZfq8x873Y3ewCNhdzsdgLfIH.XSdqcz2K0-1779460724-1.0.1.1-53vQw3aOAJwNdP1IuF3JD5.FZgmZbXz6C6Qm0K4Hpd8",cvId: '3',cZone: 'claude.ai',fa:"/api/artifacts/download?__cf_chl_f_tk=mTdTBwt9oZfq8x873Y3ewCNhdzsdgLfIH.XSdqcz2K0-1779460724-1.0.1.1-53vQw3aOAJwNdP1IuF3JD5.FZgmZbXz6C6Qm0K4Hpd8",md: 'CybamJ3ysw5nxfsqN_UFaOivo.faeHgx6YE8P7tCRMs-1779460724-1.2.1.1-va7jPrhbms4H98h937bNQvnt.LbiLO.zn_ByzuBH9jInON4.Du.om8CRwxLQyT0aSJIUMoqwXVkta5tLjx9YhvIdSZWHlZPo8xLs5vpsCOnSFO3erDVHMt1Azrq2Qxnfe7iGPYNrsHzhbqx5IolRndUZLNU7HYu27hpsOoxoPaBDi7RtezmtBusU.aHD0t8u0p7x9uiON.sXz1YPepXVYfIe_2CILvpgjkkJHeWJIWS_kNucv9oqI5Ln_KUtc9I2C1MhNqaLVKnCc2X24j1fRGBj2gRi1QwiNnJYVqiLdQhFzxbkR5J6n5iZGFvacxTpPuTMFBinqpbAYEushY5Xkfb0MrykdJAzHu1g.rwnamF6K5fAwjwfyO7Y0hJbddEe.6W64S8ZZoE0e35yJYmX75qZr1Mb0HaG4UvMaYshxRALXZy72CXaD064TxHJpHmfJ..kW4hrZc2IzGq_ref8VHnoyBfR6iM_eutViecjRhzMm3meTy7bKjy_PK4_w9pLY17t_2xgzpJKkz1E5slgHhdk7IksugqW018GPKTTueLE.no.7JNO4DILA14wDoXPSPnmQQQDfWcWQcC6_zAkrIJClD90clG7kzvaz6iWQemYqg34avmDFpIKYYVbLGFtTshx8mblvGAKpB3Y21uYtDJw2Qz45.40RMAdZ0PnzP0ulwTgxMtwV2MuJ2SJFMfTgJiwTFjPUeUUlDOKPFV5X1JZ81whfXDlfgaykv.WDAZCsF2fCvS__ceiis2EwNeEtSiEmrmzrtDzRxwA.1Gf5jpbmw.a89nH0D8v8eJYXac2uORbsPsWpmEbQNT1PL5.ZVegoWccG0iXXwToM3FbkAYiUNab.ncujSZkSVRMjPkgY9Ra01N63kOrOqV7A3IQVlKGDWSI1oHaB7P31l.xWhM_PD2vDP0OklTJpBZW8Fc.612nUiKzTWoiSdvjtQVccAtf1F0tXuQ2n_Zgho0HlSBATS76HzSYG5ZE.ZYycLGWX6GNQFrgwFiNPvZeqG6vyv5WHr9nR7feTDdZj8UMxIMaCEFGgJXv0t92h15FqLWoqHx7Kl5s2C1PW4PRAE93ZS6XC8hLxkizmcBlah7Z1hEQzuaFD.hq0MNIzYdWfKc',mdrd: 'lq49JSDiUcgW6LOATz_In2OyH2bx_9rwULymvzFFscQ-1779460724-1.2.1.1-lEoITFrHRToBtO4FRAdFHYLm.d5IeuvsJuYCwGT5VedcqppfrT8qNVss0d9YtVrGd_0TnArxbTAcDAdGT4jSVNv_TazAGZbOmvdiTl4RWbLAWw9DnDJ2ZRoGikOSuHmydILhiEnm1p_Lp20I5OQo8RoO.TzH7.j5z6C4.tZz1Yzv60MuP8UMoaZa1qxBJ55tLc7HJwf92AfuJHEgbPVIEhMQkwDmIof_Tus3hB.9X5s',};var a = document.createElement('script');a.nonce = 'WaR5jQLCG0EocYlWb7h9VL';a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=9ffc90f66d48ede4';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/api/artifacts/download?__cf_chl_rt_tk=mTdTBwt9oZfq8x873Y3ewCNhdzsdgLfIH.XSdqcz2K0-1779460724-1.0.1.1-53vQw3aOAJwNdP1IuF3JD5.FZgmZbXz6C6Qm0K4Hpd8"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+bash
+
+cat /mnt/user-data/outputs/index.html
+Output
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================ -->
+<!-- SEO META TAGS - UPDATE THESE WITH YOUR DOMAIN -->
+<!-- ============================================ -->
+<title>Beat the Timer — Spin the Wheel, Beat the Chore!</title>
+<meta name="description" content="Make chores fun for kids! Spin the wheel to get a random chore, then race the countdown timer to beat it. Free chore game for families.">
+<meta name="keywords" content="chore timer for kids, kids chore wheel, fun chore game, beat the timer, chore spinner, family chores game">
+<meta property="og:title" content="Beat the Timer — Spin the Wheel, Beat the Chore!">
+<meta property="og:description" content="Make chores fun! Spin the wheel, get a chore, beat the timer. Free for families.">
+<meta property="og:type" content="website">
+<!-- UPDATE THIS WITH YOUR ACTUAL DOMAIN -->
+<meta property="og:url" content="https://beatthetimer.co.uk">
+<link rel="canonical" href="https://beatthetimer.co.uk">
+
+<!-- ============================================ -->
+<!-- GOOGLE ADSENSE CODE - PASTE YOUR CODE BELOW -->
+<!-- Get this from: AdSense > Sites > Add Site > AdSense code snippet -->
+<!-- It looks like: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+<!-- ============================================ -->
+<!-- ADSENSE_CODE_START -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2083412278606194"
+     crossorigin="anonymous"></script>
+
+<!-- ADSENSE_CODE_END -->
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Nunito',sans-serif;background:linear-gradient(135deg,#667eea 0%,#f093fb 50%,#f5576c 100%);min-height:100vh;overflow-x:hidden}
+.app{max-width:520px;margin:0 auto;padding:16px;display:flex;flex-direction:column;align-items:center}
+
+/* HEADER */
+.header{width:100%;text-align:center;margin-bottom:10px}
+.title{font-family:'Fredoka One',cursive;font-size:clamp(32px,8vw,48px);color:white;text-shadow:3px 3px 0 rgba(0,0,0,0.25);display:flex;align-items:center;gap:8px;justify-content:center;width:100%}
+.free-badge{background:#FFD700;color:#333;font-size:11px;font-family:'Nunito',sans-serif;font-weight:800;padding:3px 8px;border-radius:20px;white-space:nowrap}
+.tagline{color:rgba(255,255,255,0.92);font-size:13px;font-weight:700;letter-spacing:3px;margin-top:3px}
+
+/* AD BANNER */
+.ad-banner{background:white;border-radius:8px;padding:8px 16px;width:100%;text-align:center;margin-bottom:12px;min-height:60px;display:flex;align-items:center;justify-content:center}
+.ad-placeholder{color:#999;font-size:11px}
+
+/* GAME AREA */
+.game-area{width:100%;display:flex;align-items:flex-start;justify-content:center;gap:16px;transition:all 0.6s cubic-bezier(0.34,1.56,0.64,1)}
+.wheel-section{display:flex;flex-direction:column;align-items:center;gap:12px;transition:all 0.6s cubic-bezier(0.34,1.56,0.64,1);flex-shrink:0}
+.game-area.split .wheel-section{transform:scale(0.56);transform-origin:top center;margin-left:-28px}
+.wheel-wrapper{position:relative;width:300px;height:300px}
+.wheel-pointer{position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:13px solid transparent;border-right:13px solid transparent;border-top:26px solid white;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.4));z-index:10}
+#wheelCanvas{border-radius:50%;box-shadow:0 8px 32px rgba(0,0,0,0.35);display:block}
+.wheel-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:32px;height:32px;background:white;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.2);z-index:5}
+
+/* SPIN BUTTON */
+.spin-btn{background:linear-gradient(135deg,#FFD700,#FFA500);border:none;border-radius:50px;padding:14px 48px;font-family:'Fredoka One',cursive;font-size:22px;color:white;cursor:pointer;box-shadow:0 6px 20px rgba(255,165,0,0.5);transition:all 0.15s;text-shadow:1px 1px 2px rgba(0,0,0,0.2);letter-spacing:1px}
+.spin-btn:hover:not(:disabled){transform:scale(1.07)}
+.spin-btn:active:not(:disabled){transform:scale(0.95)}
+.spin-btn:disabled{opacity:0.45;cursor:not-allowed;transform:none}
+
+/* TIMER PANEL */
+.timer-panel{flex:1;background:rgba(255,255,255,0.96);border-radius:24px;padding:20px 16px;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.25);display:none;min-width:170px;animation:slideIn 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards}
+.timer-panel.visible{display:block}
+@keyframes slideIn{from{opacity:0;transform:translateX(50px) scale(0.8)}to{opacity:1;transform:translateX(0) scale(1)}}
+.chore-icon-big{font-size:44px;margin-bottom:4px}
+.chore-name-big{font-family:'Fredoka One',cursive;font-size:26px;color:#333;margin-bottom:10px;line-height:1.1}
+.timer-ring-container{position:relative;width:150px;height:150px;margin:0 auto 8px}
+.timer-ring{transform:rotate(-90deg)}
+.timer-bg{fill:none;stroke:#eee;stroke-width:10}
+.timer-progress{fill:none;stroke:#667eea;stroke-width:10;stroke-linecap:round;transition:stroke-dashoffset 1s linear;stroke-dasharray:376.99;stroke-dashoffset:0}
+.timer-progress.urgent{stroke:#f5576c}
+.timer-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Fredoka One',cursive;font-size:34px;color:#333}
+.timer-label{font-size:11px;color:#999;font-weight:600;letter-spacing:1px;margin-bottom:10px}
+.done-early-btn{background:linear-gradient(135deg,#4CAF50,#45a049);color:white;border:none;border-radius:20px;padding:10px 22px;font-family:'Nunito',sans-serif;font-weight:800;font-size:14px;cursor:pointer;transition:all 0.2s;box-shadow:0 4px 12px rgba(76,175,80,0.4)}
+.done-early-btn:hover{transform:scale(1.06)}
+
+/* COUNTDOWN OVERLAY */
+.countdown-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.82);display:none;align-items:center;justify-content:center;z-index:100;flex-direction:column;gap:12px;padding:20px}
+.countdown-overlay.visible{display:flex}
+.countdown-chore-preview{font-family:'Fredoka One',cursive;font-size:clamp(20px,5vw,30px);color:white;text-align:center;padding:0 20px}
+.countdown-ready{font-family:'Nunito',sans-serif;font-size:clamp(16px,4vw,22px);color:rgba(255,255,255,0.85);font-weight:700}
+.countdown-number{font-family:'Fredoka One',cursive;font-size:clamp(70px,20vw,130px);color:#FFD700;line-height:1;text-shadow:0 0 60px rgba(255,215,0,0.7)}
+.countdown-go{font-family:'Fredoka One',cursive;font-size:clamp(50px,15vw,90px);color:#4CAF50;text-shadow:0 0 60px rgba(76,175,80,0.7)}
+
+/* CELEBRATION OVERLAY */
+.celebration-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.88);display:none;align-items:center;justify-content:center;z-index:200;flex-direction:column;overflow:hidden;padding:20px}
+.celebration-overlay.visible{display:flex}
+.celebration-title{font-family:'Fredoka One',cursive;font-size:clamp(28px,7vw,64px);color:#FFD700;text-align:center;width:100%;padding:0 12px;text-shadow:0 0 40px rgba(255,215,0,0.8),3px 3px 0 rgba(0,0,0,0.3);animation:celebPop 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+@keyframes celebPop{from{transform:scale(0.3) translateY(-40px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
+.celebration-chore{font-family:'Nunito',sans-serif;font-size:clamp(16px,4vw,20px);color:white;margin-top:10px;font-weight:700;text-align:center;padding:0 20px}
+.trophy{font-size:clamp(50px,15vw,80px);animation:bounce 0.8s infinite;margin:12px 0}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
+.play-again-btn{background:#FFD700;color:#333;border:none;border-radius:30px;padding:14px 44px;font-family:'Fredoka One',cursive;font-size:clamp(18px,5vw,22px);cursor:pointer;margin-top:16px;transition:all 0.2s;box-shadow:0 6px 20px rgba(0,0,0,0.4)}
+.play-again-btn:hover{transform:scale(1.08);background:#FFC700}
+
+/* CONFETTI */
+.confetti-piece{position:fixed;animation:confettiFall linear forwards;z-index:300;pointer-events:none}
+@keyframes confettiFall{0%{transform:translateY(-20px) rotate(0deg);opacity:1}100%{transform:translateY(110vh) rotate(720deg);opacity:0}}
+
+/* PREMIUM CARD */
+.premium-card{background:white;border-radius:20px;padding:16px 20px;width:100%;margin-top:14px;text-align:center;box-shadow:0 6px 24px rgba(0,0,0,0.2)}
+.premium-title{font-family:'Fredoka One',cursive;font-size:19px;color:#333;margin-bottom:8px}
+.premium-features{list-style:none;font-size:12px;font-weight:700;color:#555;margin-bottom:12px;display:flex;flex-wrap:wrap;gap:5px;justify-content:center}
+.premium-features li{background:#f5f5f5;color:#333;padding:4px 10px;border-radius:20px;border:1px solid #e0e0e0}
+.upgrade-btn{background:linear-gradient(135deg,#667eea,#764ba2);color:white;border:none;border-radius:20px;padding:11px 30px;font-family:'Fredoka One',cursive;font-size:16px;cursor:pointer;transition:all 0.2s;box-shadow:0 4px 14px rgba(102,126,234,0.5)}
+.upgrade-btn:hover{transform:scale(1.05)}
+
+/* HOW IT WORKS SECTION */
+.how-it-works{background:rgba(255,255,255,0.25);border-radius:20px;padding:20px;width:100%;margin-top:14px;color:white}
+.how-title{font-family:'Fredoka One',cursive;font-size:20px;margin-bottom:12px;text-align:center}
+.steps{display:flex;flex-direction:column;gap:10px}
+.step{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600}
+.step-num{background:#FFD700;color:#333;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Fredoka One',cursive;font-size:14px;flex-shrink:0}
+
+/* AD DISCLOSURE */
+.ad-disclosure{background:rgba(255,255,255,0.1);border-radius:12px;padding:12px 16px;width:100%;margin-top:14px;color:rgba(255,255,255,0.8);font-size:12px;font-weight:600;text-align:center}
+
+/* FOOTER */
+.footer{width:100%;text-align:center;padding:20px 0 10px;color:rgba(255,255,255,0.7);font-size:12px;font-weight:600}
+.footer-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
+.footer-links a{color:rgba(255,255,255,0.8);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:white}
+.footer-copy{font-size:11px;color:rgba(255,255,255,0.5)}
+
+/* COOKIE BANNER */
+.cookie-banner{position:fixed;bottom:0;left:0;right:0;background:rgba(30,30,30,0.97);color:white;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;z-index:500;flex-wrap:wrap}
+.cookie-banner.hidden{display:none}
+.cookie-text{font-size:13px;font-weight:600;flex:1}
+.cookie-text a{color:#FFD700;text-decoration:none}
+.cookie-btn{background:#FFD700;color:#333;border:none;border-radius:20px;padding:8px 20px;font-family:'Nunito',sans-serif;font-weight:800;font-size:13px;cursor:pointer;white-space:nowrap}
+
+/* MODAL PAGES */
+.modal-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);z-index:400;display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:20px}
+.modal-overlay.visible{display:flex}
+.modal-content{background:white;border-radius:20px;padding:24px;max-width:500px;width:100%;margin:auto;position:relative;max-height:80vh;overflow-y:auto}
+.modal-close{position:absolute;top:12px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:#666}
+.modal-content h2{font-family:'Fredoka One',cursive;font-size:22px;color:#333;margin-bottom:16px}
+.modal-content h3{font-family:'Fredoka One',cursive;font-size:16px;color:#555;margin:14px 0 6px}
+.modal-content p{font-size:13px;color:#666;line-height:1.6;margin-bottom:8px}
+.modal-content ul{font-size:13px;color:#666;line-height:1.8;padding-left:18px;margin-bottom:8px}
+</style>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- MAIN APP -->
+<!-- ============================================ -->
+<div class="app">
+
+  <div class="header">
+    <div class="title">🏆 Beat the Timer <span class="free-badge">Free</span></div>
+    <div class="tagline">SPIN • CHORE • CONQUER</div>
+  </div>
+
+  <!-- AD BANNER - AdSense auto ads will appear here once approved -->
+  <div class="ad-banner">
+    <!-- ============================================ -->
+    <!-- ADSENSE AUTO ADS WILL APPEAR HERE AUTOMATICALLY -->
+    <!-- Once AdSense is approved, remove the placeholder text below -->
+    <!-- ============================================ -->
+    <span class="ad-placeholder">Advertisement</span>
+  </div>
+
+  <div class="game-area" id="gameArea">
+    <div class="wheel-section" id="wheelSection">
+      <div class="wheel-wrapper">
+        <div class="wheel-pointer"></div>
+        <canvas id="wheelCanvas" width="300" height="300"></canvas>
+        <div class="wheel-center"></div>
+      </div>
+      <div style="text-align:center;color:white;font-family:'Nunito',sans-serif;font-weight:800;font-size:13px;padding:0 10px;text-shadow:1px 1px 2px rgba(0,0,0,0.3);">Random chore. Ticking clock.<br>Think you're fast enough? Spin it! ⚡</div>
+      <button class="spin-btn" id="spinBtn">🎯 SPIN!</button>
+    </div>
+    <div class="timer-panel" id="timerPanel">
+      <div class="chore-icon-big" id="choreIcon">🍽️</div>
+      <div class="chore-name-big" id="choreName">Dishes</div>
+      <div class="timer-ring-container">
+        <svg class="timer-ring" width="150" height="150" viewBox="0 0 150 150">
+          <circle class="timer-bg" cx="75" cy="75" r="60"/>
+          <circle class="timer-progress" id="timerProgress" cx="75" cy="75" r="60"/>
+        </svg>
+        <div class="timer-text" id="timerText">10:00</div>
+      </div>
+      <div class="timer-label">REMAINING</div>
+      <button class="done-early-btn" id="doneEarlyBtn">✓ Done Early!</button>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="how-it-works">
+    <div class="how-title">How it Works</div>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><span>🎯 Go on then… spin it if you dare!</span></div>
+      <div class="step"><div class="step-num">2</div><span>⚡ Go go go — beat that clock!</span></div>
+      <div class="step"><div class="step-num">3</div><span>🏆 Nailed it! Absolute legend!</span></div>
+      <div class="step"><div class="step-num">4</div><span>🔄 Think you can handle another one?</span></div>
+    </div>
+  </div>
+
+  <!-- PREMIUM CARD -->
+  <div class="premium-card">
+    <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:14px;color:#667eea;margin-bottom:10px;">Hooked? Take your game to the next level! 🚀</div>
+    <div class="premium-title">⭐ Unlock Premium</div>
+    <ul class="premium-features">
+      <li>🎰 Random timer spin wheel</li>
+      <li>✏️ Add & edit custom chores</li>
+      <li>🔊 Sound effects</li>
+      <li>✨ Enhanced animations</li>
+      <li>🚫 No ads</li>
+    </ul>
+    <button class="upgrade-btn" style="opacity:0.6;cursor:not-allowed;background:linear-gradient(135deg,#999,#666);" disabled>🔒 Coming Soon</button>
+  </div>
+
+  <!-- AD DISCLOSURE -->
+  <div class="ad-disclosure">
+    📢 This site displays ads via Google AdSense to keep it free. We don't personally endorse advertised products.
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-links">
+      <a href="#" onclick="showModal('privacyModal')">Privacy Policy</a>
+      <a href="#" onclick="showModal('termsModal')">Terms &amp; Conditions</a>
+      <a href="#" onclick="showModal('contactModal')">Contact</a>
+      <a href="#" onclick="showModal('aboutModal')">About</a>
+    </div>
+    <!-- UPDATE YEAR AND DOMAIN -->
+    <div class="footer-copy">© 2026 beatthetimer.co.uk — Made with ❤️ for families</div>
+  </div>
+
+</div>
+
+<!-- ============================================ -->
+<!-- COUNTDOWN OVERLAY -->
+<!-- ============================================ -->
+<div class="countdown-overlay" id="countdownOverlay">
+  <div class="countdown-ready">Are you ready?</div>
+  <div class="countdown-chore-preview" id="countdownChoreText"></div>
+  <div id="countdownDisplay" class="countdown-number">3</div>
+</div>
+
+<!-- ============================================ -->
+<!-- CELEBRATION OVERLAY -->
+<!-- ============================================ -->
+<div class="celebration-overlay" id="celebrationOverlay">
+  <div class="celebration-title">🎉 You Beat The Timer! 🎉</div>
+  <div class="trophy">🏆</div>
+  <div class="celebration-chore" id="celebChore">Dishes complete! Amazing!</div>
+  <button class="play-again-btn" id="playAgainBtn">🔄 Play Again!</button>
+</div>
+
+<!-- ============================================ -->
+<!-- COOKIE BANNER -->
+<!-- ============================================ -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">🍪 We use cookies for ads and analytics. See our <a href="#" onclick="showModal('privacyModal')">Privacy Policy</a>.</div>
+  <button class="cookie-btn" onclick="acceptCookies()">Accept</button>
+</div>
+
+<!-- ============================================ -->
+<!-- PRIVACY POLICY MODAL -->
+<!-- ============================================ -->
+<div class="modal-overlay" id="privacyModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal('privacyModal')">✕</button>
+    <h2>Privacy Policy</h2>
+    <!-- UPDATE DOMAIN AND DATE -->
+    <p>Last updated: May 2026 | beatthetimer.co.uk</p>
+    <h3>What we collect</h3>
+    <p>We do not collect any personal information directly. This site uses Google AdSense which may use cookies to serve relevant ads.</p>
+    <h3>Cookies</h3>
+    <p>Google AdSense and Skimlinks may place cookies on your device to show relevant advertisements. You can opt out via Google's ad settings.</p>
+    <h3>Children's Privacy</h3>
+    <p>This tool is designed for use by parents with their children. We do not knowingly collect data from children under 13.</p>
+    <h3>Third Party Services</h3>
+    <ul>
+      <li>Google AdSense — advertising</li>
+      <li>Skimlinks — affiliate links</li>
+      <li>Google Fonts — typography</li>
+    </ul>
+    <h3>Contact</h3>
+    <!-- UPDATE EMAIL -->
+    <p>Questions? Email: privacy@beatthetimer.co.uk</p>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- TERMS AND CONDITIONS MODAL -->
+<!-- ============================================ -->
+<div class="modal-overlay" id="termsModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal('termsModal')">✕</button>
+    <h2>Terms &amp; Conditions</h2>
+    <p>Last updated: May 2026 | beatthetimer.co.uk</p>
+    <h3>Use of this tool</h3>
+    <p>Beat the Timer is a free tool provided for family entertainment and chore management. Use it responsibly and supervise young children.</p>
+    <h3>Premium features</h3>
+    <p>Premium access is a one-off payment of £2.99. No subscription. No refunds once premium is unlocked.</p>
+    <h3>Advertising</h3>
+    <p>This site displays ads via Google AdSense. We are not responsible for the content of third party advertisements.</p>
+    <h3>Disclaimer</h3>
+    <p>This tool is provided as-is. We make no guarantees that children will actually do their chores 😄</p>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- CONTACT MODAL -->
+<!-- ============================================ -->
+<div class="modal-overlay" id="contactModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal('contactModal')">✕</button>
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you — feedback, suggestions, or just to say hi!</p>
+    <h3>Email</h3>
+    <!-- UPDATE EMAIL -->
+    <p>📧 hello@beatthetimer.co.uk</p>
+    <h3>Feedback</h3>
+    <p>Got a chore idea we should add? A feature request? Let us know and we'll consider it for a future update.</p>
+    <h3>Issues</h3>
+    <p>If something isn't working correctly, please email us with details of the problem and your device/browser.</p>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- ABOUT MODAL -->
+<!-- ============================================ -->
+<div class="modal-overlay" id="aboutModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal('aboutModal')">✕</button>
+    <h2>About Beat the Timer</h2>
+    <p>Beat the Timer was created to make chores less of a battle and more of a game. Because nobody should have to beg their kids to tidy up.</p>
+    <h3>How it works</h3>
+    <ul>
+      <li>Spin the wheel to get a random chore</li>
+      <li>The countdown timer starts automatically</li>
+      <li>Race to finish before the timer runs out</li>
+      <li>Beat it — celebrate! Miss it — try again!</li>
+    </ul>
+    <h3>Free forever</h3>
+    <p>The basic version is completely free, supported by ads. Premium unlocks extra features for a one-off £2.99.</p>
+    <h3>Who made this?</h3>
+    <p>A parent who got tired of the chore argument. Sound familiar? 😄</p>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- SKIMLINKS CODE - PASTE YOUR CODE BELOW -->
+<!-- Get this from: hub.skimlinks.com > Toolbox > Install your Skimlinks code -->
+<!-- You need to ADD beatthetimer.co.uk as a new site in Skimlinks first -->
+<!-- ============================================ -->
+<!-- SKIMLINKS_CODE_START -->
+
+<!-- SKIMLINKS_CODE_END -->
+
+<script>
+/* ============================================ */
+/* CHORE DATA */
+/* ============================================ */
+const CHORES=[
+  {name:'Dishes',icon:'🍽️',time:600,color:'#FF6B6B'},
+  {name:'Vacuum',icon:'🌀',time:900,color:'#4ECDC4'},
+  {name:'Laundry',icon:'👕',time:1200,color:'#45B7D1'},
+  {name:'Sweeping',icon:'🧹',time:600,color:'#52c41a'},
+  {name:'Counters',icon:'✨',time:300,color:'#fa8c16'},
+  {name:'Dusting',icon:'🪣',time:480,color:'#eb2f96'},
+  {name:'Trash',icon:'🗑️',time:180,color:'#13c2c2'},
+  {name:'Tidy Up',icon:'📦',time:720,color:'#722ed1'}
+];
+
+const CIRC=2*Math.PI*60;
+let spinning=false,currentChore=null,timerInterval=null,timeLeft=0,totalTime=0,angle=0;
+
+const canvas=document.getElementById('wheelCanvas');
+const ctx=canvas.getContext('2d');
+const spinBtn=document.getElementById('spinBtn');
+const gameArea=document.getElementById('gameArea');
+const timerPanel=document.getElementById('timerPanel');
+const countdownOverlay=document.getElementById('countdownOverlay');
+const celebOverlay=document.getElementById('celebrationOverlay');
+
+/* DRAW WHEEL */
+function drawWheel(rot){
+  const cx=150,cy=150,r=145,inner=18;
+  const slice=(2*Math.PI)/CHORES.length;
+  ctx.clearRect(0,0,300,300);
+  CHORES.forEach((c,i)=>{
+    const s=rot+i*slice,e=s+slice,mid=s+slice/2;
+    ctx.beginPath();ctx.moveTo(cx,cy);ctx.arc(cx,cy,r,s,e);ctx.closePath();
+    ctx.fillStyle=c.color;ctx.fill();
+    ctx.strokeStyle='white';ctx.lineWidth=3;ctx.stroke();
+    ctx.save();
+    ctx.translate(cx,cy);ctx.rotate(mid);
+    const textR=r-16;
+    ctx.shadowColor='rgba(255,255,255,0.9)';ctx.shadowBlur=4;
+    ctx.font='bold 14px Nunito,sans-serif';
+    ctx.fillStyle='#111';
+    ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.fillText(c.name,textR-42,-8);
+    ctx.font='18px serif';
+    ctx.fillText(c.icon,textR-42,12);
+    ctx.restore();
+  });
+  ctx.beginPath();ctx.arc(cx,cy,inner,0,2*Math.PI);
+  ctx.fillStyle='white';ctx.fill();
+  ctx.strokeStyle='rgba(0,0,0,0.1)';ctx.lineWidth=2;ctx.stroke();
+}
+
+drawWheel(0);
+
+/* SPIN */
+spinBtn.addEventListener('click',function(e){
+  e.preventDefault();
+  if(spinning||spinBtn.disabled)return;
+  doSpin();
+});
+
+function doSpin(){
+  spinning=true;spinBtn.disabled=true;
+  const extra=(5+Math.floor(Math.random()*5))*2*Math.PI;
+  const final=Math.random()*2*Math.PI;
+  const target=angle+extra+final;
+  const dur=4000,start=performance.now(),startA=angle;
+  function frame(now){
+    const t=Math.min((now-start)/dur,1);
+    const e=1-Math.pow(1-t,3);
+    angle=startA+(target-startA)*e;
+    drawWheel(angle);
+    if(t<1){requestAnimationFrame(frame);}
+    else{
+      angle=target%(2*Math.PI);
+      const slice=(2*Math.PI)/CHORES.length;
+      const norm=((2*Math.PI-angle+slice/2)%(2*Math.PI));
+      const idx=Math.floor(norm/slice)%CHORES.length;
+      currentChore=CHORES[idx];
+      spinning=false;
+      showCountdown();
+    }
+  }
+  requestAnimationFrame(frame);
+}
+
+/* COUNTDOWN */
+function showCountdown(){
+  document.getElementById('countdownChoreText').textContent=currentChore.icon+' '+currentChore.name+'!';
+  const disp=document.getElementById('countdownDisplay');
+  countdownOverlay.classList.add('visible');
+  let count=3;
+  disp.className='countdown-number';
+  disp.textContent=count;
+  const iv=setInterval(()=>{
+    count--;
+    if(count>0){disp.className='countdown-number';disp.textContent=count;}
+    else if(count===0){disp.className='countdown-go';disp.textContent='GO!';}
+    else{clearInterval(iv);countdownOverlay.classList.remove('visible');startTimer();}
+  },1000);
+}
+
+/* TIMER */
+function startTimer(){
+  document.getElementById('choreIcon').textContent=currentChore.icon;
+  document.getElementById('choreName').textContent=currentChore.name;
+  gameArea.classList.add('split');
+  timerPanel.classList.add('visible');
+  timeLeft=currentChore.time;totalTime=currentChore.time;
+  updateDisplay();
+  timerInterval=setInterval(()=>{
+    timeLeft--;updateDisplay();
+    if(timeLeft<=0){clearInterval(timerInterval);celebrate();}
+  },1000);
+}
+
+function updateDisplay(){
+  const m=Math.floor(timeLeft/60),s=timeLeft%60;
+  document.getElementById('timerText').textContent=m+':'+(s<10?'0':'')+s;
+  const frac=timeLeft/totalTime;
+  document.getElementById('timerProgress').style.strokeDashoffset=CIRC*(1-frac);
+  if(frac<0.25)document.getElementById('timerProgress').classList.add('urgent');
+}
+
+document.getElementById('doneEarlyBtn').addEventListener('click',()=>{
+  clearInterval(timerInterval);celebrate();
+});
+
+/* CELEBRATE */
+function celebrate(){
+  document.getElementById('celebChore').textContent=currentChore.icon+' '+currentChore.name+' complete! Amazing work! 🌟';
+  celebOverlay.classList.add('visible');
+  burst();setTimeout(burst,700);setTimeout(burst,1400);
+}
+
+function burst(){
+  const cols=['#FF6B6B','#4ECDC4','#45B7D1','#FFD700','#96CEB4','#DDA0DD','#FF9F43','#5F27CD','#FF6348','#2ED573'];
+  for(let i=0;i<90;i++){
+    const p=document.createElement('div');
+    p.className='confetti-piece';
+    const size=8+Math.random()*14;
+    p.style.cssText='left:'+Math.random()*100+'vw;top:-30px;width:'+size+'px;height:'+size+'px;background:'+cols[~~(Math.random()*cols.length)]+';animation-duration:'+(1.8+Math.random()*2.2)+'s;animation-delay:'+Math.random()*0.4+'s;border-radius:'+(Math.random()>0.5?'50%':'3px')+';';
+    document.body.appendChild(p);
+    p.addEventListener('animationend',()=>p.remove());
+  }
+}
+
+/* RESET */
+document.getElementById('playAgainBtn').addEventListener('click',()=>{
+  clearInterval(timerInterval);
+  celebOverlay.classList.remove('visible');
+  gameArea.classList.remove('split');
+  timerPanel.classList.remove('visible');
+  document.getElementById('timerProgress').classList.remove('urgent');
+  document.getElementById('timerProgress').style.strokeDashoffset='0';
+  spinBtn.disabled=false;
+  currentChore=null;timeLeft=0;
+  drawWheel(angle);
+});
+
+/* MODAL FUNCTIONS */
+function showModal(id){
+  document.getElementById(id).classList.add('visible');
+  document.body.style.overflow='hidden';
+}
+function closeModal(id){
+  document.getElementById(id).classList.remove('visible');
+  document.body.style.overflow='';
+}
+document.querySelectorAll('.modal-overlay').forEach(m=>{
+  m.addEventListener('click',function(e){
+    if(e.target===this)closeModal(this.id);
+  });
+});
+
+/* COOKIE BANNER */
+function acceptCookies(){
+  localStorage.setItem('cookiesAccepted','true');
+  document.getElementById('cookieBanner').classList.add('hidden');
+}
+if(localStorage.getItem('cookiesAccepted')){
+  document.getElementById('cookieBanner').classList.add('hidden');
+}
+</script>
+
+</body>
+</html>
+Done
