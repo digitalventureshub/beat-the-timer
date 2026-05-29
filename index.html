@@ -431,7 +431,7 @@ function doSpin(){
     else{
       angle=target%(2*Math.PI);
       const slice=(2*Math.PI)/CHORES.length;
-      const norm=((2*Math.PI-angle+slice/2)%(2*Math.PI));
+      const norm=((2*Math.PI-angle)%(2*Math.PI));
       const idx=Math.floor(norm/slice)%CHORES.length;
       currentChore=CHORES[idx];
       spinning=false;
