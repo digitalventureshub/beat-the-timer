@@ -300,7 +300,7 @@ function doSpin(){
       angle=target%(2*Math.PI);
       const slice=(2*Math.PI)/CHORES.length;
       const norm=((2*Math.PI-angle)%(2*Math.PI));
-      const idx=(Math.floor(norm/slice)+2)%CHORES.length;
+      const idx=(Math.floor(norm/slice)+3)%CHORES.length;
       currentChore=CHORES[idx];
       spinning=false;
       showCountdown();
