@@ -1,0 +1,7 @@
+# ads.txt for beatthetimer.co.uk
+# ============================================
+# UPDATE YOUR PUBLISHER ID BELOW
+# Get from: AdSense > Account > Account information > Publisher ID
+# It looks like: pub-XXXXXXXXXXXXXXXX
+# ============================================
+google.com, pub-2083412278606194, DIRECT, f08c47fec0942fa0
