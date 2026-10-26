@@ -1,5 +1,5 @@
 {
   "redirects": [
-    { "source": "/free-printable", "destination": "PAYHIP_FREE_PRODUCT_URL", "permanent": false }
+    { "source": "/free-printable", "destination": "https://payhip.com/b/rmRfy", "permanent": false }
   ]
 }
