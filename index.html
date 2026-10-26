@@ -104,7 +104,12 @@ body{font-family:'Nunito',sans-serif;background:linear-gradient(135deg,#667eea 0
 .modal-content h3{font-family:'Fredoka One',cursive;font-size:16px;color:#555;margin:14px 0 6px}
 .modal-content p{font-size:13px;color:#666;line-height:1.6;margin-bottom:8px}
 .modal-content ul{font-size:13px;color:#666;line-height:1.8;padding-left:18px;margin-bottom:8px}
+.freebie-card{background:#fffbea;border:2px dashed #FFA500;border-radius:20px;padding:16px 20px;width:100%;margin-top:14px;text-align:center}
+.freebie-title{font-family:'Fredoka One',cursive;font-size:19px;color:#333;margin-bottom:6px}
+.freebie-card p{font-size:13px;color:#555;margin-bottom:10px}
+.freebie-btn{display:inline-block;background:linear-gradient(135deg,#FFD700,#FFA500);color:#333;font-family:'Fredoka One',cursive;font-size:16px;padding:10px 28px;border-radius:20px;text-decoration:none}
 </style>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 <div class="app">
@@ -112,7 +117,6 @@ body{font-family:'Nunito',sans-serif;background:linear-gradient(135deg,#667eea 0
     <div class="title">🏆 Beat the Timer <span class="free-badge">Free</span></div>
     <div class="tagline">SPIN • CHORE • CONQUER</div>
   </div>
-  <div class="ad-banner"><span class="ad-placeholder">Advertisement</span></div>
   <div class="game-area" id="gameArea">
     <div class="wheel-section" id="wheelSection">
       <div class="wheel-wrapper">
@@ -156,7 +160,13 @@ body{font-family:'Nunito',sans-serif;background:linear-gradient(135deg,#667eea 0
       <li>✨ Enhanced animations</li>
       <li>🚫 No ads</li>
     </ul>
-    <button class="upgrade-btn" style="opacity:0.6;cursor:not-allowed;background:linear-gradient(135deg,#999,#666);" disabled>🔒 Coming Soon</button>
+    <a class="upgrade-btn" href="/waitlist.html" style="display:inline-block;text-decoration:none">⭐ Join the waitlist</a>
+    <div style="font-size:11px;color:#999;margin-top:6px">Coming soon for a one-off £2.99. Be first to know.</div>
+  </div>
+  <div class="freebie-card">
+    <div class="freebie-title">🎁 Free printable chore chart</div>
+    <p>Print it, stick it on the fridge, tick off chores as you beat the timer. Free when you join our family email list.</p>
+    <a class="freebie-btn" href="/free-printable">Get it free</a>
   </div>
   <div class="ad-disclosure">📢 This site displays ads via Google AdSense to keep it free. We don't personally endorse advertised products.</div>
   <div class="footer">
@@ -387,6 +397,7 @@ document.querySelectorAll('.modal-overlay').forEach(m=>{
   m.addEventListener('click',function(e){if(e.target===this)closeModal(this.id);});
 });
 function acceptCookies(){localStorage.setItem('cookiesAccepted','true');document.getElementById('cookieBanner').classList.add('hidden');}
+var hashModal={'#privacy':'privacyModal','#terms':'termsModal','#contact':'contactModal'}[location.hash];if(hashModal)showModal(hashModal);
 if(localStorage.getItem('cookiesAccepted')){document.getElementById('cookieBanner').classList.add('hidden');}
 </script>
 </body>

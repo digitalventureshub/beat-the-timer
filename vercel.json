@@ -1,1 +1,5 @@
-{}
+{
+  "redirects": [
+    { "source": "/free-printable", "destination": "PAYHIP_FREE_PRODUCT_URL", "permanent": false }
+  ]
+}
